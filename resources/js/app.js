@@ -10,7 +10,6 @@ window._token = document.head.querySelector('meta[name="csrf-token"]').content
 import App from './MainApp'
 import VueRouter from 'vue-router'
 import Container from './Container'
-import './vendor/vee-validate'
 import 'vue-multiselect/dist/vue-multiselect.min.css'
 import Multiselect from 'vue-multiselect'
 
@@ -46,18 +45,6 @@ export const createApp = () => {
           name: 'award-list',
           component: AwardList,
         },
-        // {
-        //   path: '/student/:id/update',
-        //   name: 'student-update',
-        //   props: true,
-        //   component: StudentForm,
-        // },
-        // {
-        //   path: '/student/:id/detail',
-        //   name: 'student-detail',
-        //   props: true,
-        //   component: StudentForm,
-        // },
       ],
     },
   ]
