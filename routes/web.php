@@ -23,9 +23,4 @@ Route::post('/login', [LoginController::class, 'login'])->name('login');
 
 Route::group(['prefix' => 'award', 'as' => 'award.'], function () {
     Route::get('/', [AwardController::class, 'search'])->name('get');
-    // Route::post('/store', [StudentController::class, 'store'])->name('store');
-    // Route::put('/update', [StudentController::class, 'update'])->name('update');
-    // Route::get('/{id}/detail', [StudentController::class, 'show'])->name('show');
-    // Route::get('/validate-code', [StudentController::class, 'validateCode'])->name('validate-code');
-    // Route::delete('/drop', [StudentController::class, 'drop'])->name('drop');
 });
